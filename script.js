@@ -22,7 +22,7 @@ myButton.addEventListener('click', () => {
     })
     .then(data => {
       if (data.Response === "True") {
-        console.log("Search Results:", data.Search);
+        console.log(data.Search);
         data.Search.forEach((movie) => {
           const movieElement = document.createElement('div');
           movieElement.classList.add('movie');
@@ -45,6 +45,6 @@ myButton.addEventListener('click', () => {
       }
     })
     .catch(error => {
-      console.error("Fetch Error:", error);
+      console.error(error);
     });
 });
