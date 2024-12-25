@@ -10,7 +10,7 @@ myButton.addEventListener('click', () => {
   const year = document.querySelector('#yr').value;
 
 
-  const url = `http://www.omdbapi.com/?s=${encodeURIComponent(query)}&type=${type}&y=${year}&page=${page}&apikey=${apiKey}`;
+  const url = `https://www.omdbapi.com/?s=${encodeURIComponent(query)}&type=${type}&y=${year}&page=${page}&apikey=${apiKey}`;
 
 
   fetch(url)
